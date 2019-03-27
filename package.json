@@ -4,6 +4,7 @@
   "license": "MIT",
   "description": "website for San Diego Accessibility & Inclusive Design meetup",
   "scripts": {
+    "build": "parcel build src/index.html",
     "start": "parcel src/index.html",
     "test": "jest"
   },
