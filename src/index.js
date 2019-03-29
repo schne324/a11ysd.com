@@ -1,6 +1,11 @@
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 
-render(<App />, document.getElementById('app'));
+if (process.env.NODE_ENV !== 'production') {
+  const axe = require('react-axe');
+  axe(React, ReactDOM, 1000);
+}
+
+ReactDOM.render(<App />, document.getElementById('app'));

@@ -1,7 +1,13 @@
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align: center;
+  font-size: 18px;
+  color: #1f2d3d;
+}
+
+body {
+  margin: 0;
 }
 
 *,
