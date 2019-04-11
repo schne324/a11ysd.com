@@ -1,0 +1,17 @@
+.SkipLink {
+  top: -100px;
+  left: -100px;
+  background: #4d7c8a;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 5px;
+  text-decoration: none;
+  position: absolute;
+  transition: all 500ms;
+}
+
+.SkipLink.active {
+  transition: all 500ms;
+  top: 10px;
+  left: 10px;
+}

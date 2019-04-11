@@ -2,35 +2,8 @@ header {
   padding: 1.5em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Poiret One', cursive;
-  margin: 28px auto;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.75em;
-}
-
-p {
-  text-align: left;
-  font-weight: 400;
-}
-
 nav {
-  background: #046d5f;
+  background: #4d7c8a;
   padding: 7px 0;
 }
 
@@ -56,7 +29,8 @@ nav a {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+nav a.current {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   transition: all 500ms;
@@ -66,4 +40,16 @@ main {
   padding: 0 2em 2em 2em;
   margin: 0 auto;
   max-width: 960px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+  background: #4d7c8a;
+  color: #fff;
 }

@@ -1,0 +1,42 @@
+.Sponsors--links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Sponsors--links a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: none;
+  transition: box-shadow 500ms;
+}
+
+.Sponsors--links a img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.Sponsors--links a:focus,
+.Sponsors--links a:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #003349, 0 0 0 6px #fff,
+    0 0 0 8px #003349;
+  transition: box-shadow 500ms;
+}
+
+.Sponsors--links .Sponsors--links-deque {
+  background: #003349;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.Sponsors--links-deque svg {
+  display: block;
+  width: 160px;
+}
