@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Home from '../Home';
 import Events from '../Events';
 import Sponsors from '../Sponsors';
 import Contact from '../Contact';
+import Error from '../Error';
 import SkipLink from '../SkipLink';
 import IconLink from '../IconLink';
 import './index.css';
@@ -33,10 +34,13 @@ const App = () => (
         </ul>
       </nav>
       <main>
-        <Route path="/" exact component={Home} />
-        <Route path="/events/" component={Events} />
-        <Route path="/sponsors/" component={Sponsors} />
-        <Route path="/contact/" component={Contact} />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/events/" component={Events} />
+          <Route path="/sponsors/" component={Sponsors} />
+          <Route path="/contact/" component={Contact} />
+          <Route component={Error} />
+        </Switch>
       </main>
       <footer role="contentinfo">
         <ul className="Home__icons">
