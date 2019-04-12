@@ -103,14 +103,28 @@ export default function Home() {
             <h4>Chris Land</h4>
             <img src={chris} alt="" role="presentation" />
             <p>
-              Chris has been involved in web development since 1998, with
-              experience in coding, design, ecommerce, user experience and
-              enterprise systems. Today he specializes in helping organizations
-              solve accessibility problems as a consultant and instructor. To
-              Chris, web accessibility is an integral part of inclusive user
-              interface design and development, providing people with
-              disabilities an unprecedented level of independence.
+              Chris is an accessibility consultant with experience in coding,
+              design, ux and enterprise systems. He considers web accessibility
+              to be an integral part of inclusive user interface design and
+              development, providing people with disabilities an unprecedented
+              level of independence.
             </p>
+            <div className="Home__wrapper--links">
+              <a
+                href="https://twitter.com/cwinfieldLand"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @cwinfieldLand twitter
+              </a>
+              <a
+                href="https://www.linkedin.com/in/christopher-w-land/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chris on LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </div>
