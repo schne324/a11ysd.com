@@ -88,7 +88,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {`Harris' personal website`}
+                {`Harris' website`}
               </a>
               <a
                 href="https://games.harris-schneiderman.com/"
