@@ -9,7 +9,7 @@ import './index.css';
 const Sponsors = () => (
   <div className="Sponsors">
     <Helmet>
-      <title>Home</title>
+      <title>Sponsors</title>
     </Helmet>
     <Card
       heading="Sponsors"
