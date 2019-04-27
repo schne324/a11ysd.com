@@ -1,9 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Card from '../Card';
 import './index.css';
 
 const Contact = () => (
   <div className="Contact">
+    <Helmet>
+      <title>Contact</title>
+    </Helmet>
     <Card heading="Contact a11ySD" footer={null}>
       <div className="Events--content">
         <p>There are many ways to get in contact with us!</p>

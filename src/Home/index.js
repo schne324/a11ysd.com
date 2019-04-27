@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Helmet } from 'react-helmet';
 import Card from '../Card';
 import logo from '../img/a11ysd.jpeg';
 import harris from '../img/harris.jpeg';
@@ -8,6 +9,9 @@ import './index.css';
 export default function Home() {
   return (
     <div className="Home">
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       <Card
         heading="What is a11ySD?"
         footer={
