@@ -1,0 +1,14 @@
+.Events--content {
+  flex: 1 0 50%;
+  margin-right: 15px;
+}
+
+.Events .Home__content--image img {
+  max-width: 400px;
+}
+
+@media (max-width: 450px) {
+  .Contact .Events--content {
+    font-size: 15px;
+  }
+}

@@ -1,14 +1,67 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from '../Home';
+import Events from '../Events';
+import Sponsors from '../Sponsors';
+import Contact from '../Contact';
+import Error from '../Error';
+import SkipLink from '../SkipLink';
+import IconLink from '../IconLink';
+import Nav from '../Nav';
+import './index.css';
 
 const App = () => (
-  <main className="App">
-    <h1>a11ySD</h1>
-    <h2>San Diego Accessibility & Inclusive Design</h2>
-    <p>
-      Website coming soon! For now, head to the{' '}
-      <a href="https://www.meetup.com/a11ySD/">a11ySD meetup page</a>
-    </p>
-  </main>
+  <Router>
+    <SkipLink />
+    <div className="App">
+      <header role="banner">
+        <h1>a11ySD</h1>
+        <h2>San Diego Accessibility & Inclusive Design</h2>
+      </header>
+      <Nav />
+      <main>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/events/" component={Events} />
+          <Route path="/sponsors/" component={Sponsors} />
+          <Route path="/contact/" component={Contact} />
+          <Route component={Error} />
+        </Switch>
+      </main>
+      <footer role="contentinfo">
+        <ul className="Home__icons">
+          <IconLink
+            icon="fa-slack"
+            label="Slack"
+            href="https://web-a11y.slack.com/messages/a11ysd"
+          >
+            #a11ySD
+          </IconLink>
+          <IconLink
+            icon="fa-twitter"
+            label="Twitter"
+            href="https://twitter.com/a11ysd"
+          >
+            @a11ySD
+          </IconLink>
+          <IconLink
+            icon="fa-meetup"
+            label="Meetup"
+            href="https://www.meetup.com/a11ySD/"
+          >
+            a11ySD
+          </IconLink>
+          <IconLink
+            icon="fas fa-envelope"
+            label="info@a11ysd.com"
+            href="mailto:info@a11ysd.com"
+          >
+            email
+          </IconLink>
+        </ul>
+      </footer>
+    </div>
+  </Router>
 );
 
 App.displayName = 'App';

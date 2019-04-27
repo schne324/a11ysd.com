@@ -1,0 +1,32 @@
+header {
+  padding: 1.5em;
+}
+
+main {
+  padding: 0 2em 2em 2em;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+  background: #4d7c8a;
+  color: #fff;
+}
+
+@media (max-width: 450px) {
+  main {
+    padding: 0 1em 1em 1em;
+  }
+
+  .Home__card {
+    width: 100%;
+    margin-right: 0;
+  }
+}

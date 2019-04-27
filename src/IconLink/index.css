@@ -1,0 +1,27 @@
+.IconLink {
+  list-style: none;
+  margin: 15px;
+}
+
+.IconLink a {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  transition: all 350ms;
+}
+
+.IconLink a:focus,
+.IconLink a:hover {
+  background-color: #fff;
+  color: #4d7c8a;
+  transition: all 500ms;
+}
+
+.IconLink a i {
+  font-size: 1.5em;
+}

@@ -1,11 +1,44 @@
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align: center;
+  font-size: 18px;
+  color: #1f2d3d;
+}
+
+body {
+  margin: 0;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poiret One', cursive;
+  margin: 28px auto;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+p {
+  text-align: left;
+  font-weight: 400;
 }
