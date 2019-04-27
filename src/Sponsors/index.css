@@ -40,3 +40,20 @@
   display: block;
   width: 160px;
 }
+
+@media (max-width: 450px) {
+  .Sponsors--links a,
+  .Sponsors--links .Sponsors--links-deque {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Sponsors--links a img {
+    width: 100px;
+  }
+
+  .Sponsors--links-deque svg {
+    display: block;
+    width: 80px;
+  }
+}

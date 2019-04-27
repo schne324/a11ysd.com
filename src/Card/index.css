@@ -25,6 +25,7 @@
 
 .Home__content--image img {
   max-width: 10em;
+  width: 100%;
 }
 
 .Home__wrapper--links {

@@ -19,3 +19,14 @@ footer {
   background: #4d7c8a;
   color: #fff;
 }
+
+@media (max-width: 450px) {
+  main {
+    padding: 0 1em 1em 1em;
+  }
+
+  .Home__card {
+    width: 100%;
+    margin-right: 0;
+  }
+}

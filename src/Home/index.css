@@ -55,4 +55,5 @@
   max-height: 300px;
   display: block;
   margin: 25px auto;
+  max-width: 100%;
 }
