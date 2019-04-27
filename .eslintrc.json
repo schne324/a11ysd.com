@@ -17,5 +17,8 @@
     "react": {
       "version": "16"
     }
+  },
+  "rules": {
+    "jsx-a11y/no-noninteractive-element-interactions": "off"
   }
 }

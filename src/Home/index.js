@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </Fragment>
       </Card>
-      <div className="Home__cards">
+      <div className="Home__cards small">
         <div className="Home__card">
           <h4>Lightning talks</h4>
           <i aria-hidden="true" className="fas fa-bolt" />
@@ -64,9 +64,8 @@ export default function Home() {
             <p>
               Harris is a software developer with a strong passion for
               accessibility. He is a member of the W3C ARIA Working Group and
-              works for Deque Systems. He spends his free time playing guitar,
-              cooking, hiking, fishing and working on open source projects
-              trying to make the web a better place for everyone!
+              works for Deque Systems. He enjoys working on open source projects
+              aimed at making the web a better place for everyone!
             </p>
             <div className="Home__wrapper--links">
               <a

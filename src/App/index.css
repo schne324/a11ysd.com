@@ -2,40 +2,6 @@ header {
   padding: 1.5em;
 }
 
-nav {
-  background: #4d7c8a;
-  padding: 7px 0;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: 300;
-  padding: 5px 15px;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-  display: block;
-  margin: 0 5px;
-  transition: all 500ms;
-}
-
-nav a:hover,
-nav a:focus,
-nav a.current {
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transition: all 500ms;
-}
-
 main {
   padding: 0 2em 2em 2em;
   margin: 0 auto;

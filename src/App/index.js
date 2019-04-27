@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../Home';
 import Events from '../Events';
 import Sponsors from '../Sponsors';
@@ -7,6 +7,7 @@ import Contact from '../Contact';
 import Error from '../Error';
 import SkipLink from '../SkipLink';
 import IconLink from '../IconLink';
+import Nav from '../Nav';
 import './index.css';
 
 const App = () => (
@@ -17,22 +18,7 @@ const App = () => (
         <h1>a11ySD</h1>
         <h2>San Diego Accessibility & Inclusive Design</h2>
       </header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/events/">Events</Link>
-          </li>
-          <li>
-            <Link to="/sponsors/">Sponsors</Link>
-          </li>
-          <li>
-            <Link to="/contact/">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+      <Nav />
       <main>
         <Switch>
           <Route path="/" exact component={Home} />
