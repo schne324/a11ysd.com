@@ -1,10 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Card from '../Card';
 import meetup from '../img/meetup.jpeg';
 import './index.css';
 
 const Events = () => (
   <div className="Events">
+    <Helmet>
+      <title>Events</title>
+    </Helmet>
     <Card
       heading="Events"
       footer={

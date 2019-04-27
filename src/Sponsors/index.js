@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Helmet } from 'react-helmet';
 import Offscreen from 'react-offscreen';
 import Card from '../Card';
 import Deque from '../img/Deque';
@@ -7,6 +8,9 @@ import './index.css';
 
 const Sponsors = () => (
   <div className="Sponsors">
+    <Helmet>
+      <title>Home</title>
+    </Helmet>
     <Card
       heading="Sponsors"
       footer={

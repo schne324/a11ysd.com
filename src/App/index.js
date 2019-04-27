@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Home from '../Home';
 import Events from '../Events';
 import Sponsors from '../Sponsors';
@@ -10,10 +11,16 @@ import IconLink from '../IconLink';
 import Nav from '../Nav';
 import './index.css';
 
+const defaultTitle = 'a11ySD | San Diego Accessibility & Inclusive Design';
+
 const App = () => (
   <Router>
     <SkipLink />
     <div className="App">
+      <Helmet
+        defaultTitle={defaultTitle}
+        titleTemplate={`%s | ${defaultTitle}`}
+      />
       <header role="banner">
         <h1>a11ySD</h1>
         <h2>San Diego Accessibility & Inclusive Design</h2>
