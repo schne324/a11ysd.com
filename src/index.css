@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-size: 18px;
   color: #1f2d3d;
@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Domine', serif;
   margin: 28px auto;
 }
 
