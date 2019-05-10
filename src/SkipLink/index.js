@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
 export default class SkipLink extends Component {
+  static propTypes = { focusMain: PropTypes.func.isRequired };
   state = {
     animationClass: ''
   };
@@ -16,8 +18,6 @@ export default class SkipLink extends Component {
     this.setState({ animationClass: '' });
   };
 
-  onClick = () => document.getElementById('main-heading').focus();
-
   render() {
     const { animationClass } = this.state;
 
@@ -27,7 +27,7 @@ export default class SkipLink extends Component {
         className={`SkipLink ${animationClass}`}
         onFocus={this.onFocus}
         onBlur={this.onBlur}
-        onClick={this.onClick}
+        onClick={this.props.focusMain}
       >
         Skip to main content
       </a>
