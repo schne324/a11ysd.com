@@ -9,6 +9,7 @@ import Error from '../Error';
 import SkipLink from '../SkipLink';
 import IconLink from '../IconLink';
 import Nav from '../Nav';
+import logo from '../img/logo300.png';
 import './index.css';
 
 const defaultTitle = 'a11ySD | San Diego Accessibility & Inclusive Design';
@@ -22,7 +23,9 @@ const App = () => (
         titleTemplate={`%s | ${defaultTitle}`}
       />
       <header role="banner">
-        <h1>a11ySD</h1>
+        <h1>
+          <img src={logo} alt="a11ySD" />
+        </h1>
         <h2>San Diego Accessibility & Inclusive Design</h2>
       </header>
       <Nav />
@@ -55,6 +58,13 @@ const App = () => (
             icon="fa-meetup"
             label="Meetup"
             href="https://www.meetup.com/a11ySD/"
+          >
+            a11ySD
+          </IconLink>
+          <IconLink
+            icon="fab fa-linkedin-in"
+            label="LinkedIn"
+            href="https://www.linkedin.com/company/a11ysd/"
           >
             a11ySD
           </IconLink>
