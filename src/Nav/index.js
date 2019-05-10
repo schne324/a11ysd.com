@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './index.css';
 
 export default class Nav extends Component {
+  static propTypes = { focusMain: PropTypes.func.isRequired };
   state = { open: false };
+
   onClick = () => {
     this.setState(
       {
@@ -16,12 +19,18 @@ export default class Nav extends Component {
       }
     );
   };
+
   onKeyDown = e => {
     if (e.which !== 27) {
       return;
     }
     this.setState({ open: false });
     this.button.focus();
+  };
+
+  onNavItemClick = () => {
+    this.setState({ open: false });
+    this.props.focusMain();
   };
 
   render() {
@@ -40,18 +49,28 @@ export default class Nav extends Component {
         </button>
         <ul onKeyDown={this.onKeyDown} className={open ? 'open' : ''}>
           <li>
-            <Link to="/" innerRef={el => (this.firstItem = el)}>
+            <Link
+              to="/"
+              innerRef={el => (this.firstItem = el)}
+              onClick={this.onNavItemClick}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/events/">Events</Link>
+            <Link to="/events/" onClick={this.onNavItemClick}>
+              Events
+            </Link>
           </li>
           <li>
-            <Link to="/sponsors/">Sponsors</Link>
+            <Link to="/sponsors/" onClick={this.onNavItemClick}>
+              Sponsors
+            </Link>
           </li>
           <li>
-            <Link to="/contact/">Contact</Link>
+            <Link to="/contact/" onClick={this.onNavItemClick}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

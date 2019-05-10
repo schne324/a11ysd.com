@@ -12,6 +12,14 @@ main {
   max-width: 960px;
 }
 
+main:focus {
+  outline: 0;
+}
+
+main:focus #main-heading {
+  outline: 2px solid;
+}
+
 .App {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const MainHeading = ({ children, ...other }) => (
-  <h3 id="main-heading" tabIndex={-1} {...other}>
+  <h3 id="main-heading" {...other}>
     {children}
   </h3>
 );
