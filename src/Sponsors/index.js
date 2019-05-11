@@ -4,6 +4,7 @@ import Offscreen from 'react-offscreen';
 import Card from '../Card';
 import Deque from '../img/Deque';
 import blinkLogo from '../img/blink.jpg';
+import jsDesigns from '../img/JSDesignLogo_Black.png';
 import './index.css';
 
 const Sponsors = () => (
@@ -41,6 +42,14 @@ const Sponsors = () => (
       </a>
       <a href="https://blinkux.com/" target="_blank" rel="noopener noreferrer">
         <img src={blinkLogo} alt="Blink" />
+      </a>
+      <a
+        href="http://josephsalerno.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="Sponsors--links-jsd"
+      >
+        <img src={jsDesigns} alt="JSDesign" />
       </a>
     </div>
   </div>
