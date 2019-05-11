@@ -4,7 +4,7 @@ import Offscreen from 'react-offscreen';
 import Card from '../Card';
 import Deque from '../img/Deque';
 import blinkLogo from '../img/blink.jpg';
-import jsDesigns from '../img/JSDesignLogo_Black.png';
+import jsDesigns from '../img/JSDesignLogo_JetGrey.png';
 import './index.css';
 
 const Sponsors = () => (
