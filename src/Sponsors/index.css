@@ -6,8 +6,8 @@
 
 .Sponsors--links a {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   box-shadow: none;
   transition: box-shadow 500ms;
@@ -15,7 +15,7 @@
 
 .Sponsors--links a img {
   border-radius: 50%;
-  width: 200px;
+  width: 150px;
 }
 
 .Sponsors--links a:focus,
@@ -27,8 +27,8 @@
 
 .Sponsors--links .Sponsors--links-deque {
   background: #003349;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,20 @@
 
 .Sponsors--links-deque svg {
   display: block;
-  width: 160px;
+  width: 120px;
+}
+
+.Sponsors--links .Sponsors--links-jsd {
+  padding: 10px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Sponsors--links .Sponsors--links-jsd img {
+  border-radius: 0;
+  width: 100px;
 }
 
 @media (max-width: 450px) {
@@ -55,5 +68,9 @@
   .Sponsors--links-deque svg {
     display: block;
     width: 80px;
+  }
+
+  .Sponsors--links .Sponsors--links-jsd img {
+    width: 70px;
   }
 }
