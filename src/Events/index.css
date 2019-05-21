@@ -7,6 +7,10 @@
   max-width: 400px;
 }
 
+.Events ul li {
+  text-align: left;
+}
+
 @media (max-width: 450px) {
   .Contact .Events--content {
     font-size: 15px;

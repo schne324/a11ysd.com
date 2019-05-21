@@ -35,6 +35,37 @@ const Events = () => (
         <img alt="" role="presentation" src={meetup} />
       </div>
     </Card>
+    <h3>Slides / Resources</h3>
+    <h4>05/16/2019 (GAAD)</h4>
+    <ul className="Home__wrapper--links">
+      <li>
+        <a
+          href="https://docs.google.com/presentation/d/1deyTc9Od_ovEG1JYPdZ7DuxTC50qhd7YyM6x5wAi9yI/edit#slide=id.p"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Automate Accessibility Testing for Your Website - Wei-En Wong
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://docs.google.com/presentation/d/e/2PACX-1vT52tJkJUPtt4FyopeFt74gDEp_qOYlL_wV2c7uLERDWB9k6dAhKMERhzZWipCjhrzpg_ysHp10uByN/pub"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Web Accessibility By The Numbers - Dan Payne
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://schne324.github.io/dragon-drop/demo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Accessible list reordering with Dragon Drop - Harris Schneiderman
+        </a>
+      </li>
+    </ul>
   </div>
 );
 
