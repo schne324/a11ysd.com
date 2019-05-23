@@ -40,6 +40,15 @@ const Events = () => (
     <ul className="Home__wrapper--links">
       <li>
         <a
+          href="https://drive.google.com/open?id=0B34IqjCwmShCZmhiVW1VN1ZZbE5pOExnV2owWmdwek9halhR"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Accessibility Tips and Tricks - Ricardo Rodriguez
+        </a>
+      </li>
+      <li>
+        <a
           href="https://docs.google.com/presentation/d/1deyTc9Od_ovEG1JYPdZ7DuxTC50qhd7YyM6x5wAi9yI/edit#slide=id.p"
           target="_blank"
           rel="noopener noreferrer"
