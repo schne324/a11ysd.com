@@ -75,6 +75,18 @@ const Events = () => (
         </a>
       </li>
     </ul>
+    <h4>03/18/2019</h4>
+    <ul className="Home__wrapper--links">
+      <li>
+        <a
+          href="https://schne324.github.io/live-region-playground/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live Region Playground - Harris Schneiderman
+        </a>
+      </li>
+    </ul>
   </div>
 );
 
