@@ -5,6 +5,7 @@ import Card from '../Card';
 import Deque from '../img/Deque';
 import blinkLogo from '../img/blink.jpg';
 import jsDesigns from '../img/JSDesignLogo_JetGrey.png';
+import la from '../img/la.png';
 import './index.css';
 
 const Sponsors = () => (
@@ -42,6 +43,14 @@ const Sponsors = () => (
       </a>
       <a href="https://blinkux.com/" target="_blank" rel="noopener noreferrer">
         <img src={blinkLogo} alt="Blink" />
+      </a>
+      <a
+        href="https://levelaccess.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="la"
+      >
+        <img src={la} alt="Level Access" />
       </a>
       <a
         href="http://josephsalerno.com/"
