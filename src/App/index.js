@@ -9,6 +9,7 @@ import Error from '../Error';
 import SkipLink from '../SkipLink';
 import IconLink from '../IconLink';
 import Nav from '../Nav';
+import Upcoming from '../Upcoming';
 import logo from '../img/logo300.png';
 import './index.css';
 
@@ -38,11 +39,12 @@ export default class App extends Component {
             defaultTitle={defaultTitle}
             titleTemplate={`%s | ${defaultTitle}`}
           />
+          <Upcoming />
           <header role="banner">
             <h1>
               <img src={logo} alt="a11ySD" />
             </h1>
-            <h2>San Diego Accessibility & Inclusive Design</h2>
+            <h2>San Diego Accessibility &amp; Inclusive Design</h2>
           </header>
           <Nav focusMain={this.focusMain} />
           <main aria-labelledby="main-heading" tabIndex={-1} ref={this.mainRef}>

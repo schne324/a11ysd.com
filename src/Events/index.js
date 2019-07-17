@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import Card from '../Card';
+import data from './data';
 import meetup from '../img/meetup.jpeg';
 import './index.css';
 
@@ -36,57 +37,31 @@ const Events = () => (
       </div>
     </Card>
     <h3>Slides / Resources</h3>
-    <h4>05/16/2019 (GAAD)</h4>
-    <ul className="Home__wrapper--links">
-      <li>
-        <a
-          href="https://drive.google.com/open?id=0B34IqjCwmShCZmhiVW1VN1ZZbE5pOExnV2owWmdwek9halhR"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Accessibility Tips and Tricks - Ricardo Rodriguez
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://docs.google.com/presentation/d/1deyTc9Od_ovEG1JYPdZ7DuxTC50qhd7YyM6x5wAi9yI/edit#slide=id.p"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Automate Accessibility Testing for Your Website - Wei-En Wong
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://docs.google.com/presentation/d/e/2PACX-1vT52tJkJUPtt4FyopeFt74gDEp_qOYlL_wV2c7uLERDWB9k6dAhKMERhzZWipCjhrzpg_ysHp10uByN/pub"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Web Accessibility By The Numbers - Dan Payne
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://schne324.github.io/dragon-drop/demo/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Accessible list reordering with Dragon Drop - Harris Schneiderman
-        </a>
-      </li>
-    </ul>
-    <h4>03/18/2019</h4>
-    <ul className="Home__wrapper--links">
-      <li>
-        <a
-          href="https://schne324.github.io/live-region-playground/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Region Playground - Harris Schneiderman
-        </a>
-      </li>
-    </ul>
+    {Object.entries(data).map(([date, { talks, link }]) => (
+      <Fragment key={date}>
+        <h4>
+          {date} {new Date(date) > Date.now() && '(upcoming)'}
+        </h4>
+        <ul className="Home__wrapper--links">
+          {talks.map(({ title, link }) => (
+            <li key={title}>
+              {link ? (
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  {title}
+                </a>
+              ) : (
+                title
+              )}
+            </li>
+          ))}
+        </ul>
+        <div className="Home__wrapper--links ita">
+          <a target="_blank" rel="noopener noreferrer" href={link}>
+            View {date} event on meetup
+          </a>
+        </div>
+      </Fragment>
+    ))}
   </div>
 );
 

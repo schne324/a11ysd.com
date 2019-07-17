@@ -11,6 +11,21 @@
   text-align: left;
 }
 
+.Events h4 {
+  padding: 1em;
+  font-weight: 100;
+  text-align: left;
+  /* margin: .5em 0; */
+  background-color: #1f2d3d;
+  color: #fff;
+}
+
+.Events .Home__wrapper--links.ita a {
+  font-style: italic;
+  font-size: 0.75em;
+  border-bottom: 1px dotted;
+}
+
 @media (max-width: 450px) {
   .Contact .Events--content {
     font-size: 15px;
