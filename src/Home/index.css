@@ -15,7 +15,7 @@
 }
 
 .Home__card {
-  background: #f9f9f9;
+  background: #363537;
   box-shadow: 0 0 5px #ccc;
   border-radius: 15px;
   padding: 10px 28px 28px 28px;
@@ -23,6 +23,7 @@
   flex: 1 0 25%;
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 
 .Home__card:last-child {

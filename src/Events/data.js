@@ -3,8 +3,9 @@ export default {
     link: 'https://www.meetup.com/a11ySD/events/262404190/',
     talks: [
       {
-        title:
-          'How to bake accessibility into UX from the beginning through top-down communication - Allie Curtis'
+        title: 'How to bake accessibility into UX - Allie Curtis',
+        link:
+          'https://drive.google.com/open?id=1T3NwRCFW9agNj0UBhJ1a4v3WN_pyX_DI'
       },
       {
         title:

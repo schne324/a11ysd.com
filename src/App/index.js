@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Home from '../Home';
 import Events from '../Events';
@@ -42,7 +42,9 @@ export default class App extends Component {
           <Upcoming />
           <header role="banner">
             <h1>
-              <img src={logo} alt="a11ySD" />
+              <Link to="/">
+                <img src={logo} alt="a11ySD" />
+              </Link>
             </h1>
             <h2>San Diego Accessibility &amp; Inclusive Design</h2>
           </header>

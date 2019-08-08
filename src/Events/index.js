@@ -13,13 +13,22 @@ const Events = () => (
     <Card
       heading="Events"
       footer={
-        <a
-          href="https://www.meetup.com/a11ySD/events/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View events
-        </a>
+        <Fragment>
+          <a
+            href="https://www.meetup.com/a11ySD/events/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View events
+          </a>
+          <a
+            href="https://photos.app.goo.gl/Z7qy2m6Su8fg9L2M7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View photos
+          </a>
+        </Fragment>
       }
     >
       <div className="Events--content">
@@ -38,7 +47,7 @@ const Events = () => (
     </Card>
     <h3>Slides / Resources</h3>
     {Object.entries(data).map(([date, { talks, link }]) => (
-      <Fragment key={date}>
+      <div className="Sect" key={date}>
         <h4>
           {date} {new Date(date) > Date.now() && '(upcoming)'}
         </h4>
@@ -60,7 +69,7 @@ const Events = () => (
             View {date} event on meetup
           </a>
         </div>
-      </Fragment>
+      </div>
     ))}
   </div>
 );

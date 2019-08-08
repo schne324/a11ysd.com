@@ -1,10 +1,15 @@
 header {
   padding: 1.5em;
+  background: #eafdf8;
 }
 
 h1 img {
   width: 300px;
   max-width: 90%;
+}
+
+h1 a {
+  text-decoration: none;
 }
 
 main {
@@ -25,11 +30,12 @@ main:focus #main-heading {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #fff;
 }
 
 footer {
   margin-top: auto;
-  background: #4d7c8a;
+  background: #363537;
   color: #fff;
 }
 

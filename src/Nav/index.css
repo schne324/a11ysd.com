@@ -1,5 +1,5 @@
 nav {
-  background: #4d7c8a;
+  background: #363537;
   padding: 7px 0;
 }
 
@@ -52,7 +52,7 @@ nav button {
 nav button:focus,
 nav button:hover {
   background: #fff;
-  color: #4d7c8a;
+  color: #363537;
   transition: all 500ms;
   outline: 0;
 }

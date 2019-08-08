@@ -15,8 +15,7 @@
   padding: 1em;
   font-weight: 100;
   text-align: left;
-  /* margin: .5em 0; */
-  background-color: #1f2d3d;
+  background-color: #363537;
   color: #fff;
 }
 
@@ -24,6 +23,17 @@
   font-style: italic;
   font-size: 0.75em;
   border-bottom: 1px dotted;
+}
+
+.Events .Sect .Home__wrapper--links a {
+  color: #363537;
+  border-color: #363537;
+}
+
+.Events .Sect .Home__wrapper--links a:focus,
+.Events .Sect .Home__wrapper--links a:hover {
+  background: #363537;
+  color: #fff;
 }
 
 @media (max-width: 450px) {
