@@ -5,9 +5,9 @@
 }
 
 .Contact ul li a {
-  color: #363537;
+  color: #fff;
   font-weight: 300;
-  border-bottom: 1px solid #363537;
+  border-bottom: 1px solid #fff;
   text-decoration: none;
   transition: all 500ms;
   display: inline-block;
