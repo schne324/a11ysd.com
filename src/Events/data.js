@@ -9,7 +9,9 @@ export default {
       },
       {
         title:
-          'Practical tips for accessibility on your client’s budget - Chance Strickland'
+          'Practical tips for accessibility on your client’s budget - Chance Strickland',
+        link:
+          'https://docs.google.com/presentation/d/1aYdiQGhnrpU0Sqoh0hwhC60PwbMBM0fXn7zmGBjt1XY/edit?usp=sharing'
       },
       {
         title:
