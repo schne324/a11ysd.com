@@ -17,11 +17,11 @@
           },
           {
             "resourceType": "image",
-            "budget": 100
+            "budget": 200
           },
           {
             "resourceType": "third-party",
-            "budget": 200
+            "budget": 250
           },
           {
             "resourceType": "total",
