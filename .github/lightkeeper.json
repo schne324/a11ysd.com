@@ -41,5 +41,5 @@
       }
     ]
   },
-  "routes": ["/"]
+  "routes": ["/", "/events", "/sponsors", "/contact"]
 }
