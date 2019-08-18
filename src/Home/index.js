@@ -5,7 +5,7 @@ import logo from '../img/a11ysd.jpeg';
 import harris from '../img/harris.jpeg';
 import chris from '../img/chris.jpg';
 import './index.css';
-
+/* eslint-disable jsx-a11y/alt-text */
 export default function Home() {
   return (
     <div className="Home">
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="Home__cards">
           <div className="Home__card">
             <h4>Harris Schneiderman</h4>
-            <img src={harris} alt="" role="presentation" />
+            <img src={harris} />
             <p>
               Harris is a software developer with a strong passion for
               accessibility. He is a member of the W3C ARIA Working Group and
