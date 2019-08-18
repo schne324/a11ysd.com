@@ -15,7 +15,9 @@ export default {
       },
       {
         title:
-          'Accessibility within the team workflow, not as an afterthought - Megan Reeder'
+          'Accessibility within the team workflow, not as an afterthought - Megan Reeder',
+        link:
+          'https://drive.google.com/file/d/1hrmLYk8iCucfZvoPNEETHiWwnmPXef73/view?usp=sharing'
       },
       {
         title:
