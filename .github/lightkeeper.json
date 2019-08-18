@@ -5,7 +5,7 @@
   "settings": {
     "categories": {
       "performance": 70,
-      "accessibility": 70,
+      "accessibility": 100,
       "best-practices": 70
     },
     "budgets": [
