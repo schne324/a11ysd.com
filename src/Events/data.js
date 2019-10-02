@@ -1,4 +1,24 @@
 export default {
+  '10/02/2019': {
+    link: 'https://www.meetup.com/a11ySD/events/263701584/',
+    talks: [
+      {
+        title:
+          'Hyku - Lessons and challenges from an accessibility journey - Kevin Kochanski'
+      },
+      {
+        title:
+          'The critical (but often overlooked) role that content, content creators, and marketers play in accessibility - Dave Woods'
+      },
+      {
+        title: 'UX Design - Color Blind Accessibility Solutions - Jon Miron'
+      },
+      {
+        title:
+          'Accessibility for people who are blind: Understanding who they are and how they interpret your design - Danielle Tobey'
+      }
+    ]
+  },
   '07/24/2019': {
     link: 'https://www.meetup.com/a11ySD/events/262404190/',
     talks: [
