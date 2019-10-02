@@ -39,8 +39,8 @@ export default class App extends Component {
             defaultTitle={defaultTitle}
             titleTemplate={`%s | ${defaultTitle}`}
           />
-          <Upcoming />
           <header role="banner">
+            <Upcoming />
             <h1>
               <Link to="/">
                 <img src={logo} alt="a11ySD" />

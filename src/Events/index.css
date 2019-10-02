@@ -36,6 +36,13 @@
   color: #fff;
 }
 
+.Home__wrapper--links .TwitchLink {
+  color: #363537;
+  border-color: #363537;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
 @media (max-width: 450px) {
   .Contact .Events--content {
     font-size: 15px;

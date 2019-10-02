@@ -28,20 +28,6 @@
       "git add"
     ]
   },
-  "postcss": {
-    "modules": false,
-    "plugins": {
-      "autoprefixer": {
-        "browsers": [
-          ">1%",
-          "last 4 versions",
-          "Firefox ESR",
-          "not ie < 9"
-        ],
-        "flexbox": "no-2009"
-      }
-    }
-  },
   "dependencies": {
     "autoprefixer": "^9.5.0",
     "classnames": "^2.2.6",

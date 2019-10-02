@@ -1,6 +1,7 @@
 export default {
   '10/02/2019': {
     link: 'https://www.meetup.com/a11ySD/events/263701584/',
+    liveStream: 'https://www.twitch.tv/events/sKFk_njjQZ6AO930SkZeew',
     talks: [
       {
         title:

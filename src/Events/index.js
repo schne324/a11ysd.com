@@ -46,11 +46,24 @@ const Events = () => (
       </div>
     </Card>
     <h3>Slides / Resources</h3>
-    {Object.entries(data).map(([date, { talks, link }]) => (
+    {Object.entries(data).map(([date, { talks, link, liveStream }]) => (
       <div className="Sect" key={date}>
         <h4>
           {date} {new Date(date) > Date.now() && '(upcoming)'}
         </h4>
+        {liveStream && (
+          <div className="Home__wrapper--links">
+            <a
+              className="TwitchLink"
+              href={liveStream}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {date} live stream{' '}
+              <span aria-label="Twitch" className="fab fa-twitch" />
+            </a>
+          </div>
+        )}
         <ul className="Home__wrapper--links">
           {talks.map(({ title, link }) => (
             <li key={title}>
