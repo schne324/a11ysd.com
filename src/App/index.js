@@ -10,7 +10,6 @@ import SkipLink from '../SkipLink';
 import IconLink from '../IconLink';
 import Nav from '../Nav';
 import Upcoming from '../Upcoming';
-import Live from '../Live';
 import logo from '../img/logo300.png';
 import './index.css';
 
@@ -56,7 +55,6 @@ export default class App extends Component {
               <Route path="/events/" component={Events} />
               <Route path="/sponsors/" component={Sponsors} />
               <Route path="/contact/" component={Contact} />
-              <Route path="/live/" component={Live} />
               <Route component={Error} />
             </Switch>
           </main>
