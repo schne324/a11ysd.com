@@ -16,7 +16,7 @@ export default {
       },
       {
         title:
-          'Grass Roots Accessibility: How one patient sparked a movement - Janna'
+          'Grass Roots Accessibility: How one patient sparked a movement - Janna Kimel'
       }
     ]
   },
