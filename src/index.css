@@ -42,3 +42,7 @@ p {
   text-align: left;
   font-weight: 400;
 }
+
+iframe {
+  max-width: 100%;
+}

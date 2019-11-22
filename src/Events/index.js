@@ -3,6 +3,14 @@ import { Helmet } from 'react-helmet';
 import Card from '../Card';
 import data from './data';
 import meetup from '../img/meetup.jpeg';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel
+} from 'react-accessible-accordion';
+import 'react-accessible-accordion/dist/fancy-example.css';
 import './index.css';
 
 const Events = () => (
@@ -45,32 +53,51 @@ const Events = () => (
         <img alt="" role="presentation" src={meetup} />
       </div>
     </Card>
-    <h3>Slides / Resources</h3>
-    {Object.entries(data).map(([date, { talks, link }]) => (
-      <div className="Sect" key={date}>
-        <h4>
-          {date} {new Date(date) > Date.now() && '(upcoming)'}
-        </h4>
-        <ul className="Home__wrapper--links">
-          {talks.map(({ title, link }) => (
-            <li key={title}>
-              {link ? (
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                  {title}
-                </a>
-              ) : (
-                title
-              )}
-            </li>
-          ))}
-        </ul>
-        <div className="Home__wrapper--links ita">
-          <a target="_blank" rel="noopener noreferrer" href={link}>
-            View {date} event on meetup
-          </a>
-        </div>
-      </div>
-    ))}
+    <Accordion
+      allowZeroExpanded
+      allowMultipleExpanded
+      preExpanded={['event-0']}
+      className="Sect"
+    >
+      {Object.entries(data).map(([date, { talks, link, liveStream }], i) => (
+        <AccordionItem key={date} uuid={`event-${i}`}>
+          <AccordionItemHeading aria-level="4">
+            <AccordionItemButton>{date}</AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            {liveStream && (
+              <iframe
+                width="560"
+                title={`a11ySD live stream ${date}`}
+                height="315"
+                src={liveStream}
+                frameBorder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            )}
+            <ul className="Home__wrapper--links">
+              {talks.map(({ title, link }) => (
+                <li key={title}>
+                  {link ? (
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      {title}
+                    </a>
+                  ) : (
+                    title
+                  )}
+                </li>
+              ))}
+            </ul>
+            <div className="Home__wrapper--links ita">
+              <a target="_blank" rel="noopener noreferrer" href={link}>
+                View {date} event on meetup
+              </a>
+            </div>
+          </AccordionItemPanel>
+        </AccordionItem>
+      ))}
+    </Accordion>
   </div>
 );
 

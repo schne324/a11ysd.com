@@ -1,6 +1,28 @@
 export default {
+  '12/11/2019': {
+    link: 'https://www.meetup.com/a11ySD/events/265347194/',
+    liveStream: 'https://www.youtube.com/embed/_QBKF6AGAD4',
+    talks: [
+      {
+        title: 'The Fundamentals of Accessible Web Development - Gina Verrastro'
+      },
+      {
+        title:
+          'Build a fully tested, accessible, reusable component in ~10 mins - Harris Schneiderman'
+      },
+      {
+        title:
+          'A11y, Big Data, A.I & Machine Learning: Opportunities & Threats - Christopher Land'
+      },
+      {
+        title:
+          'Grass Roots Accessibility: How one patient sparked a movement - Janna'
+      }
+    ]
+  },
   '10/02/2019': {
     link: 'https://www.meetup.com/a11ySD/events/263701584/',
+    liveStream: 'https://www.youtube.com/embed/dyJ4oTsbXBs',
     talks: [
       {
         title:
