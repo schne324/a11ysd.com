@@ -1,7 +1,7 @@
 export default {
   '02/13/2020': {
     link: 'https://www.meetup.com/a11ySD/events/267176694/',
-    liveStream: 'https://www.youtube.com/watch?v=J2ImfcW9f7Q&feature=youtu.be',
+    liveStream: 'https://www.youtube.com/embed/J2ImfcW9f7Q',
     talks: [
       {
         title: 'a11ySD 1 year anniversary party!!'
