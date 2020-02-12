@@ -1,4 +1,21 @@
 export default {
+  '02/13/2020': {
+    link: 'https://www.meetup.com/a11ySD/events/267176694/',
+    liveStream: 'https://www.youtube.com/watch?v=J2ImfcW9f7Q&feature=youtu.be',
+    talks: [
+      {
+        title: 'a11ySD 1 year anniversary party!!'
+      },
+      {
+        title:
+          'Panel discussion with Christopher Land, Harris Schneiderman, Joe Welinske, Ricardo Rodriguez and Syrena H as the moderator'
+      },
+      {
+        title:
+          'Breakout rooms with each panelist. An opportunity for each attendee to ask the panelists anything accessibility related'
+      }
+    ]
+  },
   '12/11/2019': {
     link: 'https://www.meetup.com/a11ySD/events/265347194/',
     liveStream: 'https://www.youtube.com/embed/_QBKF6AGAD4',
