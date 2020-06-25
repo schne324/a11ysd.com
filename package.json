@@ -4,8 +4,9 @@
   "license": "MIT",
   "description": "website for San Diego Accessibility & Inclusive Design meetup",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "parcel build src/index.html",
-    "postbuild": "cpy _redirects ./dist/",
+    "postbuild": "cpy _redirects ./dist/ && react-snap",
     "start": "parcel src/index.html",
     "test": "jest"
   },
@@ -56,6 +57,12 @@
     "lint-staged": "^8.1.5",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.16.4",
-    "react-axe": "^3.1.0"
+    "react-axe": "^3.1.0",
+    "react-snap": "^1.23.0",
+    "rimraf": "^3.0.2"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "skipThirdPartyRequests": true
   }
 }
