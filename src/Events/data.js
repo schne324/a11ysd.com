@@ -1,4 +1,20 @@
 export default {
+  '12/10/2020': {
+    link: 'https://www.meetup.com/a11ySD/events/274810666/',
+    talks: [
+      {
+        title:
+          'ARIA Accessible Name: an introduction to how accessible name relates to ARIA specifications - Bryan Garaventa'
+      },
+      {
+        title:
+          'iOS Assistive Technology Demos: learn how tasks can be accomplished in different ways using VoiceOver and SwitchControl - Moaan Ahmed'
+      },
+      {
+        title: '2 more to be announced soon!!!'
+      }
+    ]
+  },
   '02/13/2020': {
     link: 'https://www.meetup.com/a11ySD/events/267176694/',
     liveStream: 'https://www.youtube.com/embed/J2ImfcW9f7Q',
