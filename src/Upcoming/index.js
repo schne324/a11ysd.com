@@ -6,8 +6,13 @@ export default function Upcoming() {
   const [newest] = Object.keys(data);
   const d = newest.split(' ')[0];
   const isUpcoming = new Date(d) > Date.now();
+  const isPreRendering =
+    typeof navigator === 'object'
+      ? navigator.userAgent.includes('ReactSnap')
+      : false;
 
-  if (!isUpcoming) {
+  // Prevent a "flash" of upcoming content by never rendering it for our pre-rendered HTML.
+  if (!isUpcoming || isPreRendering) {
     return null;
   }
 
