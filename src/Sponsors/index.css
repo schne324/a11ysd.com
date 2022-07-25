@@ -15,23 +15,13 @@
   margin: 11px;
 }
 
-.Sponsors--links a img {
-  border-radius: 50%;
-  width: 150px;
-}
-
-.Sponsors--links a.la {
+.Sponsors--links a {
   background: #f7f7f7;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 2px solid #f2f2f2;
-}
-
-.Sponsors--links a.la img {
-  border-radius: 0;
-  width: 70%;
 }
 
 .Sponsors--links a:focus,
@@ -43,50 +33,21 @@
 
 .Sponsors--links .Sponsors--links-deque {
   background: #003349;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 50%;
 }
 
-.Sponsors--links-deque svg {
+.Sponsors--links svg {
   display: block;
   width: 120px;
 }
 
-.Sponsors--links .Sponsors--links-jsd {
-  padding: 10px;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Sponsors--links .Sponsors--links-jsd img {
-  border-radius: 0;
-  width: 100px;
-}
-
 @media (max-width: 450px) {
-  .Sponsors--links a,
-  .Sponsors--links .Sponsors--links-deque {
+  .Sponsors--links a {
     width: 100px;
     height: 100px;
   }
 
-  .Sponsors--links a img {
-    width: 100px;
-  }
-
-  .Sponsors--links-deque svg {
+  .Sponsors--links svg {
     display: block;
     width: 80px;
-  }
-
-  .Sponsors--links .Sponsors--links-jsd img {
-    width: 70px;
   }
 }
