@@ -1,4 +1,112 @@
 export default {
+  '09/29/2022': {
+    link: 'https://www.meetup.com/a11ysd/events/287222291/',
+    talks: [
+      {
+        title:
+          'A11y Book Discussion: "Mismatch - How Inclusion Shapes Design" by Kat Holmes'
+      }
+    ]
+  },
+  '08/01/2022': {
+    link: 'https://www.meetup.com/a11ysd/events/286654602/',
+    talks: [
+      {
+        title: 'Inclusive Design & Social Media - Stacy Warner'
+      },
+      {
+        title: 'Awareness Labs and Everyday Accessibility - Jamie Herrera'
+      },
+      {
+        title: 'Inclusive Design for Cognitive Disabilities - Ted Drake'
+      }
+    ]
+  },
+  '02/10/2022': {
+    link: 'https://www.meetup.com/a11ysd/events/282257446/',
+    talks: [
+      {
+        title:
+          'The Why, What, and How of the GAAD Foundation - Jennison Asuncion'
+      },
+      {
+        title:
+          'A11y with Color and Annotations — Seen through a design lens - Michelle Hebert'
+      },
+      {
+        title:
+          'Starting Your Accessibility Journey: A Developers Guide - Mark Steadman'
+      },
+      {
+        title:
+          'Leftward Shift: Incorporating Accessibility Into the UX Design Process - Omar Bonilla'
+      }
+    ]
+  },
+  '01/20/2022': {
+    link: 'https://www.meetup.com/a11ysd/events/282257429/',
+    talks: [{ title: 'a11ySD January Happy Hour' }]
+  },
+  '10/26/2021': {
+    link: 'https://www.meetup.com/a11ysd/events/280653069/',
+    talks: [
+      {
+        title: 'a11ySD October Happy Hour'
+      }
+    ]
+  },
+  '10/12/2021': {
+    link: 'https://www.meetup.com/a11ysd/events/280652823/',
+    talks: [
+      {
+        title:
+          'How to test PDF accessibility using PAC3, the free PDF Accessibility Checker - Naveesha Maharaj'
+      },
+      {
+        title: 'Inclusive Iconography - John Watson'
+      },
+      {
+        title: 'Video Game Accessibility - Steven Lambert'
+      },
+      {
+        title: 'Adapting in an Able-Bodied World - Max Pete'
+      }
+    ]
+  },
+  '05/20/2021': {
+    link: 'https://www.meetup.com/a11ysd/events/278032279/',
+    talks: [
+      {
+        title:
+          'What it’s like having a hidden disability in Silicon Valley - Terri Rodriguez-Hong'
+      },
+      {
+        title:
+          'The Future of Accessibility is a "Choose Your Own Adventure" Book - Carie Fisher'
+      },
+      {
+        title: 'Robots and Accessibility - Marc B.D. Greenberg'
+      }
+    ]
+  },
+  '05/06/2021': {
+    link: 'https://www.meetup.com/a11ysd/events/277265173/',
+    talks: [
+      {
+        title: 'Continuous Accessibility - Melanie Sumner'
+      },
+      {
+        title:
+          'Easy Chirp Innovation: the history of an accessible Twitter app - Dennis Lembree'
+      },
+      {
+        title: 'Why care about contrast and what to do about it? - Lisa Kamino'
+      },
+      {
+        title: 'What the heck is a combobox? - Chance Strickland'
+      }
+    ]
+  },
   '12/10/2020': {
     link: 'https://www.meetup.com/a11ySD/events/274810666/',
     talks: [

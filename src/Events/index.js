@@ -76,7 +76,7 @@ const Events = () => (
                 allowFullScreen
               />
             )}
-            <ul className="Home__wrapper--links">
+            <ul className="Home__wrapper--links talks">
               {talks.map(({ title, link }) => (
                 <li key={title}>
                   {link ? (

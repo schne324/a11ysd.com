@@ -36,6 +36,10 @@
   color: #fff;
 }
 
+.Events .Home__wrapper--links.talks {
+  display: block;
+}
+
 @media (max-width: 450px) {
   .Contact .Events--content {
     font-size: 15px;
