@@ -1,4 +1,25 @@
 export default {
+  '04/13/2022': {
+    link: 'https://www.meetup.com/a11ysd/events/292163612/',
+    talks: []
+  },
+  '02/23/2022': {
+    link: 'https://www.meetup.com/a11ysd/events/290430407/',
+    liveStream: 'https://www.youtube.com/embed/6Y3-dJC51TQ',
+    talks: [
+      {
+        title: 'Focus on Focus - Harris Schneiderman',
+        link: 'https://schne324.github.io/focus-retention-talk/'
+      },
+      {
+        title: 'Disability Bias in Artificial Intelligence - Chris Land'
+      },
+      {
+        title:
+          'Practical UX Tips for Designing Accessible Products - Adam Rayman'
+      }
+    ]
+  },
   '09/29/2022': {
     link: 'https://www.meetup.com/a11ysd/events/287222291/',
     talks: [
