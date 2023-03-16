@@ -13,7 +13,7 @@ export default {
       },
       {
         title: 'Disability Bias in Artificial Intelligence - Chris Land',
-        link: 'http://christopher.land/disabilitybias.pptx'
+        link: 'https://christopher.land/disabilitybias.pptx'
       },
       {
         title:
