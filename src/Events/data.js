@@ -12,11 +12,13 @@ export default {
         link: 'https://schne324.github.io/focus-retention-talk/'
       },
       {
-        title: 'Disability Bias in Artificial Intelligence - Chris Land'
+        title: 'Disability Bias in Artificial Intelligence - Chris Land',
+        link: 'http://christopher.land/disabilitybias.pptx'
       },
       {
         title:
-          'Practical UX Tips for Designing Accessible Products - Adam Rayman'
+          'Practical UX Tips for Designing Accessible Products - Adam Rayman',
+        link: 'https://docs.google.com/presentation/d/1Ifnq3DihugRF5yOxL-tx2SHHBEYDuTJ8FhQjswFX-JI/edit?usp=sharing'
       }
     ]
   },
